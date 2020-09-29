@@ -1,19 +1,16 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
 
 config = {
-    'description': 'My Project',
-    'author': 'Soren Wacker',
-    'url': 'https://github.com/soerendip42',
-    'download_url': 'https://github.com/soerendip42/projectname',
-    'author_email': 'swacker@ucalgary.ca',
-    'version': '0.1',
-    'install_requires': ['nose'],
-    'packages': ['NAME'],
+    'description': '__DESC__',
+    'author': '__AUTHOR__',
+    'url': 'https://github.com/__GITHUB_USER__',
+    'download_url': 'https://github.com/__GITHUB_USER__/__PROJECT__',
+    'author_email': '__EMAIL__',
+    'version': '0.0.1',
+    'install_requires': [],
+    'packages': find_packages(),
     'scripts': [],
-    'name': 'projectname'
+    'name': '__PROJECT__'
 }
 
 setup(**config)

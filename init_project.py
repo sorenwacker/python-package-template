@@ -26,7 +26,7 @@ if __name__ == '__main__':
     with open('setup.cfg', 'r') as file:
         setup_cfg = ''.join(file.readlines())
 
-    setup_cfg = setup_py.replace('__PROJECT__', project_name)
+    setup_cfg = setup_cfg.replace('__PROJECT__', project_name)
 
     with open('setup.cfg', 'w') as file:
         file.write(setup_cfg)

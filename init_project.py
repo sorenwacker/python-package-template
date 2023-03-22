@@ -31,6 +31,9 @@ if __name__ == '__main__':
     with open('setup.cfg', 'w') as file:
         file.write(setup_cfg)
     
-    os.system(f'rm -r template; rm -r tests/test__hello_world.py; mkdir {project_name}; touch {project_name}/__init__.py; pip install versioneer; versioneer install')
-
+    os.system('rm -r template; rm -r tests/test__hello_world.py;')
+    os.system(f'mkdir {project_name}; touch {project_name}/__init__.py')
+    os.system('pip install versioneer; versioneer install')
+    os.system(f'echo # {project_name}\n{desc} > README.md')
+    
 

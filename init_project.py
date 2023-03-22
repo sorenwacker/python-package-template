@@ -34,6 +34,5 @@ if __name__ == '__main__':
     os.system('rm -r template; rm -r tests/test__hello_world.py;')
     os.system(f'mkdir {project_name}; touch {project_name}/__init__.py')
     os.system('pip install versioneer; versioneer install')
-    os.system(f'echo # {project_name}\n{desc} > README.md')
-    
+    os.system(f"echo '# {project_name}\n{desc}' > README.md")    
 

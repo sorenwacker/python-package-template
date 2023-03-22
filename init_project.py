@@ -31,6 +31,6 @@ if __name__ == '__main__':
     with open('setup.cfg', 'w') as file:
         file.write(setup_cfg)
     
-    os.system(f'mkdir {project_name}; touch {project_name}/__init__.py; rm -rf .git; git init; ')
+    os.system(f'mkdir {project_name}; touch {project_name}/__init__.py;')
 
 
